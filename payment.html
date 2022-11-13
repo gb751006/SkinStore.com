@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon"
+    href="./images/Skin Care.png" type="image/x-icon">
+    <title>Payment Page</title>
+    <link rel="stylesheet" href="./payment.css">
+</head>
+
+<body>
+    <div id="navbarr">
+        <img id="logo"
+            src="https://s1.thcdn.com/enterprise/assets/skstr-global-113e023e-ecc9-45df-abad-eb92ce1956c9-logo-default.svg"
+            alt="">
+    </div>
+
+
+    <!-- main box  -->
+
+    <div id="main">
+        <div id="first">
+            <div>
+                <h3>Login or Sign up</h3>
+                <p>Checkout faster with saved details and get access to exclusive offers</p>
+            </div>
+            <div id="login_signup">LOGIN/SIGNUP</div>
+        </div>
+
+        <!-- second box -->
+
+        <div id="second">
+            <div id="form">
+                <h3>Checkout as a Guest</h3>
+                <p>Compelte your order without signing up, sign up after payment. </p>
+                <h3>1. Email and delivery address</h3>
+                <label for="">*email address</label>
+                <input type="email" id="email" required>
+                <p>We'll send the purchase receipt to this email.</p>
+                <label>*Country/region</label>
+                <select name="country" id="country">
+                    <!-- js part -->
+                </select>
+                <label for="">*Full Name</label>
+                <input type="text" id="name" required>
+                <label for="">*Zip-Code/Postcode</label>
+                <input type="number" id="number" required>
+                <label for="">Company Name</label>
+                <input type="text" id="company_name">
+                <label for="">*Apartment/Suite number</label>
+                <input type="text" id="apartment" required>
+                <label for=""> Address</label>
+                <input type="text" id="Address" required>
+                <label for=""> Address 2</label>
+                <input type="text" id="Address2">
+                <label for="">*Town/City</label>
+                <input type="text" id="city" required>
+                <label for="">County/sector</label>
+                <input type="text" id="county">
+                <label for="">Contact number</label>
+                <input type="number" id="number" required>
+                <p>Why do we need your number?</p>
+            </div>
+        </div>
+
+        <!-- 3rd box  -->
+        <div id="third">
+            <p>2. Select Delivery option</p>
+            <div>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiTlHcoFBCizd1QAiZk6HljfSvXJtOppUgNgcdSdzMHGJF0KR0G1GgYZDsgSvonmWCzbQ&usqp=CAU" alt="">
+                <p>Please enter your address so we can calculate your delivery options.</p>
+            </div>
+        </div>
+
+        <!-- 4th box  -->
+        <div id="fourth">
+            <h3>3. Select Payment Method</h3>
+
+            <form id="form">
+                <p>Credit/debit Card</p>
+                <img alt="Credit Card Logos" title="Credit Card Logos"
+                    src="https://www.shift4shop.com/images/credit-card-logos/cc-md-5_b.png" width="350" height="38"
+                    border="0" />
+                <label for="">*Card Number</label>
+                <input type="text" id="card_number">
+                <label for="">*Name on card</label>
+                <input type="text" id="name_on_card">
+                <label for="">*Expiry Date</label>
+                <input type="month" placeholder="Month" id="month">
+                <label for="">*Security code(CV2)</label>
+                <input type="number">
+            </form>
+            <div id="different">
+                <h4>Use a differnet payment method</h4>
+                <img alt="Credit Card Logos" title="Credit Card Logos"
+                    src="https://www.shift4shop.com/images/credit-card-logos/cc-md-4.png" width="309" height="38"
+                    border="0" />
+            </div>
+        </div>
+
+        <!-- 5th box  -->
+        <div id="fifth">
+            <div id="fifth_div">
+                <img src="./images/lock.png" alt="">
+                <p>SUBMIT MY ORDER</p>
+            </div>
+                
+
+        </div>
+        <p>By placing this order, you are confirming that you agree to our <span style="text-decoration:underline;">Terms and conditions</span> and <span style="text-decoration:underline;">Privacy Policy</span>.</p>
+    </div>
+
+    <!-- lats box  -->
+    <div id="lastbox">
+        <p>THGPP LLC</p>
+        <p>1209 Orange Street, Wilmington, New Castle, DE 19801. United States</p>
+    </div>
+</body>
+
+</html>
+<script src="./payment.js"></script>
+
+<script>
+    document.querySelector("#fifth_div").addEventListener("click", function(){
+        event.preventDefault();
+        alert("Order submitted Succefully");
+    })
+    document.querySelector("#login_signup").addEventListener("click", function(){
+        event.preventDefault();
+        window.location.href="./signin.html"
+    })
+    document.querySelector("#logo").addEventListener("click", function(){
+        event.preventDefault();
+        window.location.href="index.html"
+    })
+</script>

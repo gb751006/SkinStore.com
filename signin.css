@@ -1,0 +1,128 @@
+/* navbar */
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap");
+body {
+  font-family: "Lato", sans-serif;
+  background-color: rgb(239, 239, 239);
+}
+#navbar {
+  background-color: white;
+  margin: -8px;
+  position: sticky;
+  top: 0;
+}
+#navbar > img {
+  width: 17%;
+  padding: 7px;
+  padding-left: 40px;
+}
+
+/* mid part  */
+
+#mid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  width: 70%;
+  margin: auto;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+#mid #first {
+  background-color: white;
+  text-align: start;
+}
+#form {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  margin: auto;
+  justify-content: flex-start;
+  padding: 10px;
+}
+#form > label {
+  margin-bottom: 8px;
+}
+#form > input {
+  padding: 14px;
+  margin-bottom: 30px;
+}
+#first > p {
+  font-weight: 300;
+  margin-left: 58px;
+  text-decoration: underline;
+  margin-top: 0px;
+  margin-bottom: 35px;
+}
+#first > p:hover {
+  text-decoration: none;
+  cursor: pointer;
+}
+#signup, #register>div{
+  /* margin-left: 58px; */
+  width: 300px;
+  padding: 13px 10px;
+  text-align: center;
+  font-weight: 300;
+  background-color: rgb(32, 31, 31);
+  color: white;
+  border: 0px;
+}
+#signup:hover ,#register>div:hover{
+  background-color: rgb(6, 194, 194);
+  color: black;
+  cursor: pointer;
+}
+#signup + p {
+  margin-top: 20px;
+  text-decoration: none;
+}
+
+#lastpart {
+  width: 320px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+#lastpart > div {
+  display: flex;
+  border: 1px solid;
+  border-color: rgb(140, 140, 140);
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 35px;
+}
+#lastpart > div:hover {
+  background-color: rgb(236, 234, 234);
+  transition: 0.1s;
+  border: 0px;
+}
+#lastpart > div > img {
+  width: 30px;
+}
+#lastpart > div > p {
+  font-size: 14px;
+  font-weight: bold;
+  color: rgb(115, 114, 114);
+}
+
+#register{
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px 0px;
+    background-color: white;
+    
+
+}
+#register>h3{
+    margin-left: 60px;
+    margin-top: -1px;
+}
+#register>div{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 55px;
+}

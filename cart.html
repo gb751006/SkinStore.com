@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon"
+        href="./images/Skin Care.png" type="image/x-icon">
+    <title>Quick_buy</title>
+    <link rel="stylesheet" href="./navbar.css">
+    <link rel="stylesheet" href="./footer.css">
+    <link rel="stylesheet" href="./cart.css">
+    <link rel="stylesheet" href="./header.css">
+</head>
+
+<body>
+    <div id="upperbox">
+        <img src="./images/us.png" alt="">
+        <div>
+            <p>us- USD</p>
+            <p>Help</p>
+        </div>
+    </div>
+    <div id="navbar">
+        <div id="logo">
+            <img src="./images/logo.png" alt="">
+        </div>
+        <div>
+            <input type="text" id="input" placeholder="Start for a product or brand...">
+        </div>
+        <div id="account">
+            <div>
+                <img src="./images/account.png" alt="">
+            </div>
+            <div>Account</div>
+        </div>
+        <div id="cart">
+            <div>
+                <img src="./images/cart.png" alt="">
+            </div>
+            <div>Cart</div>
+        </div>
+    </div>
+    <!-- item box -->
+    <div id="item">
+
+    </div>
+    <!-- shippiong ites  -->
+    <div id="publicity">
+        <div class="pub">
+            <div>
+                <img src="https://img.icons8.com/ios-filled/2x/document-delivery.png" alt="">
+            </div>
+            <div>FREE US Shipping Over $49 </div>
+        </div>
+        <div class="pub">
+            <div>
+                <img src="https://img.icons8.com/external-konkapp-detailed-outline-konkapp/2x/external-referral-marketing-and-growth-konkapp-detailed-outline-konkapp.png"
+                    alt="">
+            </div>
+            <div>Refar a Friend, Get $15</div>
+        </div>
+        <div class="pub">
+            <div>
+                <img src="https://img.icons8.com/ios/2x/new.png" alt="">
+            </div>
+            <div>New Customer Save 20% - Use Code NEWBIE </div>
+        </div>
+        <div class="pub">
+            <div>
+                <img src="https://img.icons8.com/material-two-tone/2x/download.png" alt="">
+            </div>
+            <div>Download Our App</div>
+        </div>
+    </div>
+
+    <!-- discount box  -->
+    <div id="discount">
+        15% off with code SS15 + 16-Piece Beauty Bag(Worth$106)@%150 | Shop now >
+    </div>
+
+    <!-- quick_buy html here -->
+    <!-- your cart line  -->
+    <div id="your_cart">
+        <div>Your Cart</div>
+        <div>
+            <img src="./images/lock.png" alt="">
+
+            <div id="checkout">CHECKOUT SECURELY NOW</div>
+
+        </div>
+    </div>
+    <!-- 2nd part  -->
+    
+    <div class="mid_part">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRZ7MyHkVx3jK0Ji9mIfWaBpNfaZ0GZTVjl_30j4rp2Vob2aaP2xjIiycsdYy5OV88QPI&usqp=CAU" alt="">
+        <h4>You have qualified for: Select a gift for you or someone you love when you spend $130 or more -
+            Don't forget to make your selection below</h4>
+    </div>
+
+    <!-- 3rd part -->
+
+    <div id="sec_part">
+        <div>Items <span></span></div>
+        <div style="margin-left: -35px;">Price <span></span></div>
+        <!-- <div>Quantity <span></span></div> -->
+        <div style="margin-left: -25px;">Subtotal <span></span></div>
+    </div>
+
+    <div id="cart_items">
+        <!-- js  -->
+    </div>
+
+    <!-- subtotal  -->
+
+    <div id="subtotal_part">
+        <div class="div">Cart Subtotal:</div>
+        <div id="span_total">0</div>
+    </div>
+
+
+
+    <!-- footer  -->
+    <div id="footer">
+        <div class="cls">
+            <div>
+                <p>
+                    Sign up to our email list and receive 20% off your next order
+                </p>
+                <button id="last_up" style="width:100px ;">SIGN UP</button>
+            </div>
+            <div>
+                <p>Connect with us</p>
+                <div id="connect">
+                    <!-- js -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="mid_footer">
+        <div id="help">
+            <p> Help & Information</p>
+        </div>
+        <div id="about">
+            <p>About SkinStore</p>
+        </div>
+        <div id="legal">
+            <p>Legal</p>
+        </div>
+        <div id="contact_us">
+            <p>How To Contact Us</p>
+        </div>
+    </div>
+    </div>
+    <div id="end_footer_part">
+        <div>
+            <h1>THG</h1>
+            <p>2022 © The Hut.com Ltd.</p>
+        </div>
+        <div>
+            <p> Pay Securely with</p>
+
+            <div id="payment_optn">
+                <img alt="Credit Card Logos" title="Credit Card Logos"
+                    src="https://www.shift4shop.com/images/credit-card-logos/cc-md-5_b.png" width="350" height="38"
+                    border="0" />
+            </div>
+            <div>
+                <img alt="Credit Card Logos" title="Credit Card Logos"
+                    src="https://www.shift4shop.com/images/credit-card-logos/cc-md-4.png" width="309" height="38"
+                    border="0" />
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+<script src="./navbar.js"></script>
+<script src="./footer.js"></script>
+<script src="./cart.js"></script>
+
+<script>
+    document.querySelector("#account").addEventListener("click", function () {
+        window.location.href = "signin.html"
+    });
+    document.querySelector("#logo").addEventListener("click", function () {
+        window.location.href = "index.html"
+    })
+    document.querySelector("#last_up").addEventListener("click", function () {
+        window.location.href = "signin.html"
+    })
+    document.querySelector("#checkout").addEventListener("click", function () {
+        window.location.href = "payment.html"
+    })
+</script>

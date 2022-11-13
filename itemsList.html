@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon"
+    href="./images/Skin Care.png" type="image/x-icon">
+    <title>Cart</title>
+    <link rel="stylesheet" href="./navbar.css">
+    <link rel="stylesheet" href="./itemsList.css">
+    <link rel="stylesheet" href="./footer.css">
+    <link rel="stylesheet" href="./header.css">
+</head>
+
+<body>
+    <div id="upperbox">
+        <img src="./images/us.png" alt="">
+        <div>
+            <p>us- USD</p>
+            <p>Help</p>
+        </div>
+    </div>
+    <div id="navbar">
+        <div id="logo">
+            <img src="./images/logo.png" alt="">
+        </div>
+        <div>
+            <input type="text" id="input" placeholder="Start for a product or brand...">
+        </div>
+        <div id="account">
+            <div>
+                <img src="./images/account.png" alt="">
+            </div>
+            <div>Account</div>
+        </div>
+        <div id="cart">
+            <div>
+                <img src="./images/cart.png" alt="">
+            </div>
+            <div>Cart</div>
+        </div>
+    </div>
+    <!-- item box -->
+    <div id="item">
+
+    </div>
+
+    <!-- shippiong ites  -->
+    <div id="publicity">
+        <div class="pub">
+            <div>
+                <img src="https://img.icons8.com/ios-filled/2x/document-delivery.png" alt="">
+            </div>
+            <div>FREE US Shipping Over $49 </div>
+        </div>
+        <div class="pub">
+            <div>
+                <img src="https://img.icons8.com/external-konkapp-detailed-outline-konkapp/2x/external-referral-marketing-and-growth-konkapp-detailed-outline-konkapp.png"
+                    alt="">
+            </div>
+            <div>Refar a Friend, Get $15</div>
+        </div>
+        <div class="pub">
+            <div>
+                <img src="https://img.icons8.com/ios/2x/new.png" alt="">
+            </div>
+            <div>New Customer Save 20% - Use Code NEWBIE </div>
+        </div>
+        <div class="pub">
+            <div>
+                <img src="https://img.icons8.com/material-two-tone/2x/download.png" alt="">
+            </div>
+            <div>Download Our App</div>
+        </div>
+    </div>
+
+    <!-- discount box  -->
+    <div id="discount">
+        15% off with code SS15 + 16-Piece Beauty Bag(Worth$106)@%150 | Shop now >
+    </div>
+
+    <!-- here you go .... cart html -->
+    <div id="language">
+        <h1>Up to 50% off!</h1>
+        <p id=>45 results</p>
+        <p>Shop up to 50% off best-selling brands like SkinMedica, Decorté & more!<br>
+
+            Check out our featured offers page here, or our coupons page for all live offers here. </p>
+        <p> Check out brands such as Skinceuticals, Elizabeth Arden and EmerginC for complementary products to the
+            Serums or your choice.</p>
+    </div>
+     
+    <!-- sorting  -->
+    <div id="sort">
+        <p>sort by</p>
+        <select id="select">
+            <option value="">Default</option>
+            <option value="high">Price: High To Low</option>
+            <option value="low">Price: Low to high</option>
+        </select>
+    </div>
+    <!-- item  -->
+    <div id="items">
+        <!-- js  -->
+    </div>
+
+
+    <!-- footer  -->
+    <div id="footer">
+        <div class="cls">
+            <div>
+                <p>
+                    Sign up to our email list and receive 20% off your next order
+                </p>
+                <button id="last_up" style="width:100px ;">SIGN UP</button>
+            </div>
+            <div>
+                <p>Connect with us</p>
+                <div id="connect">
+                    <!-- js -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="mid_footer">
+        <div id="help">
+            <p> Help & Information</p>
+        </div>
+        <div id="about">
+            <p>About SkinStore</p>
+        </div>
+        <div id="legal">
+            <p>Legal</p>
+        </div>
+        <div id="contact_us">
+            <p>How To Contact Us</p>
+        </div>
+    </div>
+    </div>
+    <div id="end_footer_part">
+        <div>
+            <h1>THG</h1>
+            <p>2022 © The Hut.com Ltd.</p>
+        </div>
+        <div>
+            <p> Pay Securely with</p>
+
+            <div id="payment_optn">
+                <img alt="Credit Card Logos" title="Credit Card Logos"
+                    src="https://www.shift4shop.com/images/credit-card-logos/cc-md-5_b.png" width="350" height="38"
+                    border="0" />
+            </div>
+            <div>
+                <img alt="Credit Card Logos" title="Credit Card Logos"
+                    src="https://www.shift4shop.com/images/credit-card-logos/cc-md-4.png" width="309" height="38"
+                    border="0" />
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+<script src="./navbar.js"></script>
+<script src="./itemsList.js"></script>
+<script src="./footer.js"></script>
+<script src="./cart_data.js"></script>
+<script>
+    document.querySelector("#account").addEventListener("click", function () {
+        event.preventDefault();
+        window.location.href = "signin.html"
+    });
+    document.querySelector("#cart").addEventListener("click", function () {
+        event.preventDefault();
+        window.location.href = "cart.html"
+    })
+    document.querySelector("#logo").addEventListener("click", function () {
+        event.preventDefault();
+        window.location.href = "index.html"
+    })
+    document.querySelector("#last_up").addEventListener("click", function () {
+        event.preventDefault();
+        window.location.href = "signup.html"
+    })
+</script>
